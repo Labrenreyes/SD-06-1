@@ -1,8 +1,18 @@
+function ShoppingList() {
+  this.items = []
+
+  this.addItem = function(name, quantity) {
+    this.items.push({ name: name, quantity: quantity })
+  }
+
+  this.printList = function() {
+    console.log(this.items)
+  }
+}
 
 
-// Type your code below this line!
-
-
-
-// Type your code above this line!
+const myList = new ShoppingList()
+myList.addItem("chamoy", 2)
+myList.addItem("cocacola", 12)
+myList.printList()
 
